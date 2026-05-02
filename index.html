@@ -1,1 +1,141 @@
-index.html 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Estrela Eliene G. Silva</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background: black;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3') center/cover no-repeat;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top:0; left:0;
+    width:100%; height:100%;
+    background: rgba(0,0,0,0.65);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    margin: 0;
+    text-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.seal {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 8px 18px;
+    border: 1px solid gold;
+    border-radius: 50px;
+    color: gold;
+    font-weight: bold;
+}
+
+/* SEÇÕES */
+.section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* IMAGEM DO CÉU */
+.sky {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    margin-top: 20px;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-content">
+        <h1>⭐ Estrela “Eliene G. Silva”</h1>
+        <div class="subtitle">Registro simbólico oficial no céu</div>
+        <div class="seal">CERTIFICADO SIMBÓLICO OFICIAL</div>
+    </div>
+</div>
+
+<!-- DETALHES -->
+<div class="section">
+    <h2>Detalhes do Registro</h2>
+
+    <div class="card">
+        <p><strong>Nome da estrela:</strong> Eliene G. Silva</p>
+        <p><strong>Data do registro:</strong> 02/05/2026</p>
+        <p><strong>Coordenadas:</strong> RA 18h 36m 56.3s / +38° 47′ 01″</p>
+        <p><strong>Status:</strong> Registro simbólico personalizado</p>
+    </div>
+</div>
+
+<!-- MAPA DO CÉU -->
+<div class="section">
+    <h2>Mapa do Céu</h2>
+
+    <!-- TROQUE ESTA IMAGEM PELO PRINT DO STELLARIUM -->
+    <img class="sky" src="ceu.jpg">
+
+    <p style="opacity:0.7;">
+        Representação do céu no momento simbólico do registro.
+    </p>
+</div>
+
+<!-- SIGNIFICADO -->
+<div class="section">
+    <h2>Significado</h2>
+
+    <div class="card">
+        <p>
+        A Estrela “Eliene G. Silva” representa um momento único e eterno,
+        simbolizando memória, luz e conexão especial registrada no céu.
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
